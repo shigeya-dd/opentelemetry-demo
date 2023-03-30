@@ -29,7 +29,7 @@ RUN go build -o /go/bin/checkoutservice/ ./
 
 # -----------------------------------------------------------------------------
 
-FROM alpine
+FROM alpine:3.17.3
 
 WORKDIR /usr/src/app/
 

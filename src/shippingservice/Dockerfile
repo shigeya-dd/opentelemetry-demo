@@ -9,7 +9,7 @@ COPY ./src/shippingservice/ /app/
 COPY ./pb/ /app/proto/
 RUN cargo build -r --features="dockerproto"
 
-FROM alpine as release
+FROM alpine:3.18.3 as release
 RUN apk add --no-cache ca-certificates
 RUN GRPC_HEALTH_PROBE_VERSION=v0.4.7 && \
     wget -qO/bin/grpc_health_probe https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64 && \

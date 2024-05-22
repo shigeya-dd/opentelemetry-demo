@@ -9,5 +9,5 @@ opentelemetry-instrumentation-urllib3==0.28b1
 opentelemetry-sdk==1.9.1
 python-dotenv==0.20.0
 python-json-logger==2.0.2
-requests==2.27.1
+requests==2.32.0
 urllib3==1.26.8

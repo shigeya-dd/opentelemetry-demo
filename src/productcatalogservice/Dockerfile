@@ -13,7 +13,7 @@ RUN go build -o /go/bin/productcatalogservice/
 
 # -----------------------------------------------------------------------------
 
-FROM alpine AS release
+FROM alpine:3.18.3 AS release
 
 WORKDIR /usr/src/app/
 
